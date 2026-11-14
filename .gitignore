@@ -1,0 +1,29 @@
+# Local project state
+project-brief.md
+generated/
+outputs/
+
+# Secrets and local environment
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Archives and temporary files
+*.zip
+*.7z
+*.tar
+*.gz
+*.tmp
+*.bak
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
