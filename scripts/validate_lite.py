@@ -15,11 +15,13 @@ REQUIRED = {
     "references/disciplines-and-modules.md",
     "references/styles.md",
     "references/prompt-generator.md",
+    "references/pattern-design.md",
     "examples/demo-conversation.md",
     "examples/example-prompts.md",
     "examples/prompt-depth-comparison.md",
     "examples/dose-dock-full-prompts.md",
     "examples/warm-harbor-complete-demo.md",
+    "examples/pattern-design-demo.md",
     "README.md",
     "README.en.md",
     "INSTALL.md",
@@ -239,9 +241,35 @@ for resource in [
     "references/disciplines-and-modules.md",
     "references/styles.md",
     "references/prompt-generator.md",
+    "references/pattern-design.md",
 ]:
     if resource not in skill:
         fail(f"SKILL.md does not route to required resource: {resource}")
+
+pattern = text_files.get(ROOT / "references" / "pattern-design.md", "")
+for marker in [
+    "真正的重复纹样", "独立文化图形", "IP 角色形象", "品牌辅助图形", "产品应用",
+    "文化来源", "权利状态", "中心对称", "旋转", "镜像", "二方连续", "四方连续",
+    "最小重复单元", "对接边界", "折叠", "曲面", "开孔", "高密度文化实验视觉",
+]:
+    if marker not in pattern:
+        fail(f"pattern design reference missing: {marker}")
+
+pattern_demo = text_files.get(ROOT / "examples" / "pattern-design-demo.md", "")
+for marker in [
+    "## 用户初始输入", "## 主动阶段引导", "## 对象分类", "## 信息状态表",
+    "## 两张展板规划", "297 × 420 mm", "非赛事强制要求", "概念假设",
+    "禁止推断", "最小重复单元", "对接边界", "区域比例合计：100%",
+    "没有在本仓库中实际调用图像模型",
+]:
+    if marker not in pattern_demo:
+        fail(f"pattern demo missing required element: {marker}")
+if pattern_demo.count("【1. 一致性锁定】") != 2:
+    fail("pattern demo must contain two full six-segment prompts")
+
+for item in ["references/disciplines-and-modules.md", "references/prompt-generator.md", "references/styles.md"]:
+    if "纹样" not in text_files.get(ROOT / item, ""):
+        fail(f"pattern capability not integrated into {item}")
 
 if ERRORS:
     print("LITE VALIDATION FAILED")

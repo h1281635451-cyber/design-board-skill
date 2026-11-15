@@ -1,5 +1,7 @@
 # 公开发布检查报告
 
+> v1.1.0-pattern-design 候选目录已加入纹样专项、原创演示与公开资料隔离校验。最终结果以 `python scripts/validate_lite.py` 的最新运行输出为准；本文件不代表已上传 GitHub。
+
 检查日期：2026-11-14  
 目标目录：`github-release/`  
 建议版本：`v1.0.0-lite`
@@ -8,7 +10,7 @@
 
 **通过，等待发布者人工检查。** 当前目录可作为独立 GitHub 仓库内容和 Codex Skill 安装源。中英文首页已完成能力校准，工业产品案例已完整标注事实/假设/待验证项；Lite 默认提示词已恢复完整六段质量门槛。未执行 GitHub 登录、远程仓库创建、提交、推送或 Release 上传。
 
-正式公开前仍需由发布者选择许可证。GitHub 仓库地址已更新为 `https://github.com/h1281635451-cyber/design-board-skill`。
+正式 MIT License 已加入，GitHub 仓库地址已更新为 `https://github.com/h1281635451-cyber/design-board-skill`。
 
 ## 用户要求逐项检查
 
@@ -19,7 +21,7 @@
 | 3 | 中英文 GitHub README | 通过 | 两份 README 均展示产品作用、适合用户、调用后引导流程、设计类型、安装和 Lite/Pro 边界 |
 | 4 | 新手安装和使用教程 | 通过 | `INSTALL.md` 覆盖 ZIP、Git、调用、更新、排错与卸载 |
 | 5 | 项目演示和示例提示词 | 通过 | 工业产品案例包含初始输入、阶段依据、信息状态表、两张规划、系列设定，并链接两张独立六段完整提示词 |
-| 6 | 版本、日志和许可证建议 | 通过 | 许可证文档逐项比较 MIT 与自定义非商业许可，未自动选择正式许可 |
+| 6 | 版本、日志和许可证 | 通过 | 根目录包含正式 MIT License；说明文档保留 MIT 与自定义非商业许可的权利差异 |
 | 7 | 不含 Pro 专有资源和完整模板 | 通过 | 禁止资源名和旧版目录扫描为 0；未包含完整模板/案例库 |
 | 8 | 不含凭据、个人信息或私有资料 | 通过 | 密钥、私钥、手机号、邮箱、用户绝对路径扫描为 0 |
 | 9 | 检查引用与运行完整性 | 通过 | 本地校验、独立副本校验和 Codex 官方校验全部通过 |
@@ -39,7 +41,7 @@ python scripts/validate_lite.py
 
 ```text
 LITE VALIDATION PASSED
-files=22 required=21 markdown=19
+files=23 required=22 markdown=19
 links=ok frontmatter=ok sensitive_scan=ok pro_asset_scan=ok utf8=ok
 ```
 
@@ -61,7 +63,7 @@ Skill is valid!
 
 - V2 校验：22 个必需文件、16 个验收用例、5 个赛事档案、8 种风格和 17 个旧版只读文件均通过；
 - Dose Dock：两张提示词各有且仅有一套 1–6 段结构，均含 100% 区域分配和“非赛事强制要求”标记；
-- 独立副本：当前 22 个文件已在无上级依赖的临时目录中通过同一 Lite 校验，临时目录随后删除；
+- 独立副本：当前 23 个文件已在无上级依赖的临时目录中通过同一 Lite 校验，临时目录随后删除；
 - Codex 官方校验：V2 与 Lite 均返回 `Skill is valid!`；临时依赖与独立副本均已删除；
 - 公开内容扫描：排除负责拦截泄漏的校验器规则文本后，Pro/旧版资源标记、用户绝对路径和凭据命中均为 0。
 
@@ -91,7 +93,7 @@ Skill is valid!
 - Dose Dock 两张提示词分别写明产品定义、A3 建议尺寸、色彩与材质、准确短文案、图组、100% 区域分配和三层禁止项；
 - 新旧对照已覆盖产品定义、展板尺寸、风格与材质、具体内容与文案、区域比例和全局约束；
 - Lite 的完整性门槛与 V2 相同，但未复制旧版逐字模板或 Pro 专有案例资源；
-- MIT 与自定义非商业许可均仅为候选，根目录仍没有正式 `LICENSE`；
+- 已选择 MIT License，根目录 `LICENSE` 使用标准条款和 `Copyright (c) 2026 h1281635451-cyber`；
 - `INSTALL.md`、中英文 README 已写入真实仓库地址和可直接执行的克隆命令。
 
 ## 明确排除内容
@@ -121,18 +123,15 @@ Skill is valid!
 
 ## 2026-11-14 最终发布前复核
 
-结论：**目录内容通过最终技术检查，可等待发布者选择许可证并创建 GitHub 仓库。**
+结论：**目录内容通过最终技术检查，正式 MIT License 与 GitHub 仓库地址均已就位。**
 
 | 检查项 | 结果 | 核验内容 |
 |---|---|---|
 | 最新深度修复 | 通过 | `references/prompt-generator.md` 已采用 Project Bible、Global Visual Bible、Board Art Direction、Constraints 与完整六段输出；快速模式也不得退化为提纲 |
 | 输出完整度 | 通过 | Dose Dock 2 张与 Warm Harbor 3 张均逐张包含完整项目设定、A3 建议尺寸、视觉基底、区域比例、准确短文案、系列锚点和三层禁止项 |
 | Lite/Pro 隔离 | 通过 | Pro/旧版资源名、敏感信息、个人绝对路径、非许可文件类型和图片/二进制资产扫描均为 0 |
-| 引用与安装 | 通过 | `SKILL.md`、中英文 README、`INSTALL.md` 及全部 Markdown 相对链接有效；22 文件独立副本与源目录 SHA-256 一致 |
-| Lite 自检 | 通过 | `LITE VALIDATION PASSED`；22 文件、21 个必需项、19 个 Markdown，frontmatter/链接/隐私/Pro 隔离/UTF-8 均正常 |
+| 引用与安装 | 通过 | `SKILL.md`、中英文 README、`INSTALL.md` 及全部 Markdown 相对链接有效；23 文件独立副本通过同一发布校验 |
+| Lite 自检 | 通过 | `LITE VALIDATION PASSED`；23 文件、22 个必需项、19 个 Markdown，frontmatter/链接/隐私/Pro 隔离/UTF-8 均正常 |
 | Codex 官方校验 | 通过 | 发布目录与独立安装副本均返回 `Skill is valid!` |
 
-仍需发布者手动完成：
-
-1. 在 MIT 与自定义非商业许可之间作出选择，并添加正式 `LICENSE`；
-2. 人工上传或推送；本次复核未执行提交、推送、Tag 或 GitHub Release。
+仍需发布者手动上传或推送；本次复核未执行提交、推送、Tag 或 GitHub Release。

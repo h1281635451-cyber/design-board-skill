@@ -1,6 +1,6 @@
 ---
 name: design-board-prompts-lite
-description: 面向中国高校设计竞赛的免费对话式展板策划 Skill。用于识别从零构思、已有想法、设计进行中或已完成项目，基础匹配未来设计师 NCDA、华灿奖、米兰设计周中国高校作品展、全国大学生数媒竞赛和中国研究生“美丽中国”等赛事，盘点真实设计证据，动态规划任意数量的展板、参赛图片、PDF 或作品集页面，并生成通用、ChatGPT 图像、即梦和 Midjourney 提示词。也用于调整张数、视觉风格、赛事方向和恢复项目简报。
+description: 面向中国高校设计竞赛的免费对话式展板策划 Skill。用于识别 A–D 项目阶段、基础匹配国内赛事、盘点证据、动态规划展板并生成完整提示词；也用于纹样设计、传统图案再设计、非遗纹样、文化图形、装饰图案、二方/四方连续、品牌辅助图形与文创载体适配，以及调整张数、风格、赛事方向和恢复项目简报。
 ---
 
 # Design Board Prompts Lite
@@ -13,6 +13,7 @@ description: 面向中国高校设计竞赛的免费对话式展板策划 Skill�
 2. 按 [对话与动态规划](references/workflow.md) 识别项目阶段；信息不足时通常每轮只问一个关键问题。
 3. 用户提到国内赛事时读取 [赛事基础索引](references/competitions.md)，确认正式名称、届次、组别和赛道。赛事规则必须以当届官方文件为准。
 4. 按 [领域与内容模块](references/disciplines-and-modules.md) 建立“主张—证据—视觉表达”，没有证据就标记为假设、示意或待补充。
+   - 命中纹样、传统图案、非遗纹样、文化图形、装饰图案、团花、边饰或连续构成时，读取 [纹样与文化图形专项](references/pattern-design.md)，先分类再选择流程。
 5. 从 [视觉风格](references/styles.md) 选一个主风格，可加入一个辅助风格；不要把国内赛事自动等同于国潮。
 6. 按 [提示词生成器](references/prompt-generator.md) 先建立 Project Bible、Global Visual Bible、Board Art Direction 和 Constraints，再输出逐张六段、可独立复制的完整专业版提示词。只有用户明确要求局部迭代时才改用精简版。
 

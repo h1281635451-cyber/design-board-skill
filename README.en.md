@@ -39,7 +39,8 @@ The user may switch to quick mode, deep mode, skip a question, change competitio
 - Provides basic routing for NCDA, Huacan Award, Milan Design Week China Collegiate Exhibition, the National College Student Digital Media Competition, and the China Postgraduate Beautiful China Innovation Design Competition.
 - Plans one, two, three, or more pages from actual evidence instead of assuming five boards.
 - Covers product, hardware, healthcare, interaction, service, brand, packaging, culture, and sustainability projects.
-- Includes eight mixable visual directions.
+- Adds a dedicated pattern and cultural-graphic workflow that distinguishes seamless repeats, standalone cultural graphics, IP characters, brand auxiliary graphics, and carrier applications.
+- Includes ten mixable visual directions, including cultural pattern systems and dense experimental graphics.
 - Produces general, ChatGPT image, Jimeng, and Midjourney prompt guidance.
 - Separates verified evidence, concept assumptions, and missing material.
 
@@ -54,6 +55,7 @@ These capabilities are implemented by the included `SKILL.md` and `references/`.
 | Digital interaction, UI/UX, interactive installation | User goals, task flow, information architecture, interface states, prototypes, and test plans |
 | Service design | Stakeholders, journeys, touchpoints, service blueprints, and implementation mechanisms |
 | Brand, VIS, packaging, cultural innovation | Cultural sources, positioning, identity logic, guidelines, package structure, and applications |
+| Pattern and cultural graphic design | Source evidence, motif translation, center/border relationships, symmetry, rotation, mirror construction, two-way/four-way repeats, seamless boundaries, series, and carrier adaptation |
 | Sustainability and cross-disciplinary work | System boundaries, material/energy flows, impact pathways, trade-offs, evidence sources, and discipline roles |
 
 ## Lite versus Pro
@@ -94,7 +96,7 @@ Use $design-board-prompts-lite. I am an undergraduate with an early concept for 
 
 The Skill should identify the early-concept stage, state that test evidence is missing, and ask the single question that most affects the next step. It must not invent research participants, medical outcomes, or a fixed five-board format.
 
-See the [end-to-end demo](examples/demo-conversation.md) and [example requests and prompts](examples/example-prompts.md).
+See the [end-to-end demo](examples/demo-conversation.md), the [original pattern-design demo](examples/pattern-design-demo.md), and [example requests and prompts](examples/example-prompts.md).
 
 ## Competition-data notice
 
@@ -136,4 +138,4 @@ It checks required files, relative links, Skill frontmatter, sensitive-data patt
 
 Issues should include a reproducible request, the relevant competition edition, expected behavior, and actual behavior. Do not upload unredacted student data, private project files, unauthorized award images, credentials, or secret files.
 
-Read [the licensing suggestions](LICENSE-SUGGESTIONS.md) before publication. This staging folder intentionally does not include a binding final license; the publisher must choose one before making the repository public.
+This repository is licensed under the [MIT License](LICENSE). Use, modification, distribution, sublicensing, and commercial use are permitted provided that the copyright and license notice are retained. The earlier comparison remains in [the licensing notes](LICENSE-SUGGESTIONS.md).

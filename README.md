@@ -1,5 +1,11 @@
 # Design Board Prompts Lite
 
+## v1.1 纹样设计专项
+
+Lite 现已支持纹样设计、传统图案再设计、文化图形和装饰图案项目。它会先区分真正的重复纹样、独立文化图形、IP 角色、品牌辅助图形与载体应用，再按项目阶段询问文化来源、图形原型、主题、构成方式、系列数量、应用载体和展板需求。完整原创案例见 [纹样设计演示](examples/pattern-design-demo.md)。
+
+专项输出继续使用完整六段提示词，包含明确画布尺寸、视觉基底、中心图形与边饰、旋转/镜像/重复规则、最小重复单元、对接边界、逐区比例、载体适配、系列一致性和双层禁止项。来源不足时只提供明确标记的概念建议，不编造文化出处或设计过程。
+
 [English](README.en.md) · [安装教程](INSTALL.md) · [完整演示](examples/demo-conversation.md) · [版本说明](RELEASE_NOTES.md)
 
 GitHub 仓库：[h1281635451-cyber/design-board-skill](https://github.com/h1281635451-cyber/design-board-skill)
@@ -138,4 +144,4 @@ python scripts/validate_lite.py
 
 欢迎提交 Issue 描述可复现问题、目标赛事届次、期望行为和实际行为。请不要上传未脱敏的学生资料、私人项目、未授权获奖图片或密钥文件。
 
-发布前请先阅读 [许可证建议](LICENSE-SUGGESTIONS.md)。仓库当前不包含具有约束力的最终许可证，发布者应在公开前完成选择。
+本仓库采用 [MIT License](LICENSE)。允许使用、修改、分发、再许可和商业使用，但必须保留版权与许可声明。此前的方案比较保存在 [许可证说明](LICENSE-SUGGESTIONS.md)。
