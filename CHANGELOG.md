@@ -49,3 +49,7 @@
 
 - 排除旧版完整模板、Pro 专有资源、私人项目和个人联系方式。
 - 增加密钥、联系信息、绝对路径、二进制文件和引用完整性扫描。
+
+## V2 — 2026-11-26
+
+Publish full V2. Default to a comprehensive main board and complete text-bearing previews before post-production assets. Preserve the MIT license.

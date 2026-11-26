@@ -4,13 +4,13 @@
 
 1. 打开 [Design Board Skill GitHub 仓库](https://github.com/h1281635451-cyber/design-board-skill)，点击 **Code → Download ZIP**。
 2. 解压下载文件。
-3. 将解压后的仓库文件夹重命名为 `design-board-prompts-lite`。
+3. 将解压后的仓库文件夹重命名为 `design-board-prompts-v2`。
 4. 把整个文件夹复制到 Codex Skills 目录。
 5. 重新启动 Codex，或刷新可用 Skills。
 6. 输入以下内容测试：
 
 ```text
-使用 $design-board-prompts-lite，帮我判断一个设计项目处于什么阶段。
+使用 $design-board-prompts-v2，帮我判断一个设计项目处于什么阶段。
 ```
 
 必须复制整个文件夹，不能只复制 `SKILL.md`；`references/` 是运行依赖。
@@ -20,35 +20,35 @@
 在 Skills 目录的上一级运行：
 
 ```powershell
-git clone https://github.com/h1281635451-cyber/design-board-skill.git design-board-prompts-lite
+git clone https://github.com/h1281635451-cyber/design-board-skill.git design-board-prompts-v2
 ```
 
-上述命令会将仓库克隆到名为 `design-board-prompts-lite` 的本地目录，使目录名与 Skill 名称保持一致。
+上述命令会将仓库克隆到名为 `design-board-prompts-v2` 的本地目录，使目录名与 Skill 名称保持一致。
 
 ## 常见 Skills 目录
 
 实际位置以你的 Codex 配置为准。常见个人目录为：
 
 ```text
-Windows: %USERPROFILE%\.codex\skills\design-board-prompts-lite
-macOS/Linux: ~/.codex/skills/design-board-prompts-lite
+Windows: %USERPROFILE%\.codex\skills\design-board-prompts-v2
+macOS/Linux: ~/.codex/skills/design-board-prompts-v2
 ```
 
-如果使用自定义 `CODEX_HOME`，请安装到该目录下的 `skills/design-board-prompts-lite`。
+如果使用自定义 `CODEX_HOME`，请安装到该目录下的 `skills/design-board-prompts-v2`。
 
 ## 首次使用
 
 推荐输入完整上下文：
 
 ```text
-使用 $design-board-prompts-lite。
+使用 $design-board-prompts-v2。
 我是本科生，项目是一个面向夜间骑行的智能尾灯，目前有草图和外观模型，没有用户测试，想参加国内设计比赛。请用深入模式，每轮只问一个关键问题。
 ```
 
 快速出稿：
 
 ```text
-使用 $design-board-prompts-lite，快速模式。根据现有信息规划 2 张展板；未知内容用“待补”标记，不要生成虚构数据。
+使用 $design-board-prompts-v2，快速模式。根据现有信息规划 2 张展板；未知内容用“待补”标记，不要生成虚构数据。
 ```
 
 ## 更新
@@ -67,7 +67,7 @@ git pull --ff-only
 
 ### Skill 没有出现
 
-- 确认文件夹名是 `design-board-prompts-lite`；
+- 确认文件夹名是 `design-board-prompts-v2`；
 - 确认目录根部直接包含 `SKILL.md`，没有多套一层文件夹；
 - 重新启动或刷新 Codex；
 - 运行 `python scripts/validate_lite.py` 检查完整性。
@@ -86,8 +86,8 @@ git pull --ff-only
 
 ## 卸载
 
-关闭 Codex 后，删除 `design-board-prompts-lite` Skill 文件夹，再重新启动 Codex。删除 Skill 不会自动删除你保存在其他项目目录的项目简报或生成文件。
+关闭 Codex 后，删除 `design-board-prompts-v2` Skill 文件夹，再重新启动 Codex。删除 Skill 不会自动删除你保存在其他项目目录的项目简报或生成文件。
 
 ## English quick install
 
-Download or clone [the GitHub repository](https://github.com/h1281635451-cyber/design-board-skill), rename the folder to `design-board-prompts-lite`, and place the complete folder in your Codex Skills directory. For Git, run `git clone https://github.com/h1281635451-cyber/design-board-skill.git design-board-prompts-lite`. Restart or refresh Codex, then invoke `$design-board-prompts-lite`. Keep `references/` beside `SKILL.md`; the Skill is not a single-file installation.
+Download or clone [the GitHub repository](https://github.com/h1281635451-cyber/design-board-skill), rename the folder to `design-board-prompts-v2`, and place the complete folder in your Codex Skills directory. For Git, run `git clone https://github.com/h1281635451-cyber/design-board-skill.git design-board-prompts-v2`. Restart or refresh Codex, then invoke `$design-board-prompts-v2`. Keep `references/` beside `SKILL.md`; the Skill is not a single-file installation.

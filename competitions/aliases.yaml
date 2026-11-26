@@ -1,0 +1,26 @@
+version: "2026-11-14"
+aliases:
+  ncda:
+    canonical: "未来设计师·全国高校数字艺术设计大赛（NCDA）"
+    terms: ["未来设计师", "NCDA", "全国高校数字艺术设计大赛"]
+    route: "ncda/overview.md"
+  huacan:
+    canonical: "新锐设计竞赛·华灿奖"
+    terms: ["华灿", "华灿奖", "新锐设计竞赛", "两岸新锐设计竞赛·华灿奖"]
+    note: "历史名称只作别名，不自动继承旧规则。"
+    route: "huacan/overview.md"
+  milan:
+    canonical: "米兰设计周—中国高校设计学科师生优秀作品展"
+    terms: ["米兰设计周", "米兰高校赛", "米兰设计周高校设计作品展"]
+    note: "归入中国高校设计竞赛/作品展语境，不等同意大利商业展会。"
+    route: "milan/overview.md"
+  cmit:
+    canonical: "全国大学生数字媒体科技作品及创意竞赛"
+    terms: ["数媒", "数媒比赛", "数媒竞赛", "CMIT"]
+    route: "cmit/overview.md"
+  beautiful_china:
+    canonical: "中国研究生“美丽中国”创新设计大赛"
+    terms: ["美丽中国", "研究生美丽中国", "美丽中国创新设计大赛"]
+    ambiguous: true
+    clarification: "你说的‘美丽中国’是否指中国研究生创新实践系列大赛中的中国研究生‘美丽中国’创新设计大赛？"
+    route: "beautiful-china/overview.md"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Design Board Prompts Lite"
-  short_description: "国内高校设计竞赛的对话式展板策划与通用提示词工具"
-  default_prompt: "Use $design-board-prompts-lite to turn my design project into a China-focused competition board plan and editable image prompts."
+  display_name: "国内设计竞赛展板策划 V2"
+  short_description: "面向国内高校设计竞赛的对话式展板策划与图像生成提示词工具"
+  default_prompt: "Use $design-board-prompts-v2 to guide my project toward a China-focused design competition board plan and executable prompts."
